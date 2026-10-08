@@ -2,6 +2,12 @@
 
 A responsive, high-performance landing page developed for the **Upthrust Web Developer Practical Assessment**, replicating the supplied Figma design specifications, 3D asset integration, accessible interactive states, and zero-PII conversion tracking.
 
+
+## Live Demo
+
+👉 [View the Live Project](https://upthrust-iota.vercel.app/)
+
+
 ---
 
 ## 1. Stack Used & Why
