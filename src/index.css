@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-orange: #FF4600;
+    --color-orange-hover: #E03D00;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  /* Accessibility: Visible Focus States */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 2px solid #FF4600;
+    outline-offset: 3px;
+  }
+}
+
+/* Custom Typography for Figma Hero Display Text */
+.font-display-giant {
+  font-family: 'Syne', 'Monument Extended', 'Impact', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+}
+
+/* Condensed Display Typography for Buttons / Badges */
+.font-condensed-bold {
+  font-family: 'Anton', 'Bebas Neue', 'Impact', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* Blueprint Drafting Grid (Hero Section) */
+.bg-blueprint {
+  background-color: #FAFAFA;
+  background-image: 
+    linear-gradient(to right, rgba(0, 102, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 102, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
+}
+
+/* Dark Perspective Grid (Services & Footer) */
+.bg-dark-grid {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Hand-drawn Pill Badge SVG simulation / CSS border */
+.badge-pill-drawn {
+  border: 1.5px solid #FF4600;
+  border-radius: 9999px;
+  padding: 3px 12px;
+  transform: rotate(-3deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hand-drawn underline */
+.hand-drawn-underline {
+  position: relative;
+  display: inline-block;
+}
+.hand-drawn-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background: #FF4600;
+  border-radius: 2px;
+  transform: rotate(-1deg);
+}
+
+/* Custom Scrollbar for Services Card Reel */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-service-fade {
+  animation: fadeInSlide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
