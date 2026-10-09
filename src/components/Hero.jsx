@@ -204,7 +204,7 @@ export const Hero = () => {
 
           {/* PERFORMS: only touches the pedestal.
               Tune: top (bigger number = lower = less overlap) */}
-          <div className="absolute inset-x-0 top-[79%] md:top-[78%] z-30">
+          <div className="absolute inset-x-0 top-[75%] md:top-[74%] z-30">
             <PerspectiveHeadline
               text={hero.headlineBottom || 'PERFORMS'}
               viewW={880}
