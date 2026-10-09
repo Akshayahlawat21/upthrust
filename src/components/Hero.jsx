@@ -5,9 +5,26 @@ export const Hero = () => {
   const logos = clientLogos;
   const hero = heroContent;
   return (
-    <section className="relative w-full bg-blueprint border-b border-gray-200 overflow-hidden text-black pt-8 pb-12 lg:pt-14 lg:pb-16">
+    <section className="relative w-full max-w-full bg-blueprint border-b border-gray-200 overflow-x-clip overflow-hidden text-black pt-8 pb-12 lg:pt-14 lg:pb-16">
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative min-h-[640px] lg:min-h-[820px] flex flex-col justify-between">
+      <div
+        className="
+          w-full
+          max-w-[1440px]
+          mx-auto
+          px-4
+          sm:px-6
+          md:px-12
+          relative
+          min-h-[640px]
+          sm:min-h-[700px]
+          md:min-h-[760px]
+          lg:min-h-[820px]
+          flex
+          flex-col
+          justify-between
+        "
+      >
 
         {/* HERO VISUAL */}
         <div className="relative w-full flex flex-col items-center justify-center my-auto">
@@ -21,23 +38,20 @@ export const Hero = () => {
               className="
                 font-display-giant
                 text-brand-orange
-                text-[10.5vw]
-                xs:text-[11vw]
-                sm:text-[68px]
-                md:text-[92px]
-                lg:text-[140px]
-                xl:text-[160px]
-                tracking-tight
-                leading-none
                 italic
                 font-black
+                tracking-[-0.06em]
+                leading-[0.88]
+                select-none
                 relative
                 z-10
-                block
                 whitespace-nowrap
+                text-[clamp(30px,8.8vw,160px)]
+                lg:text-[clamp(100px,11.1vw,160px)]
               "
             >
-              {hero.headlineTop || "BOLD DESIGN"}
+              <span className="inline lg:block">BOLD</span>
+              <span className="inline ml-1 sm:ml-2 lg:ml-0">DESIGN</span>
             </h1>
 
 
@@ -402,13 +416,9 @@ export const Hero = () => {
                 className="
                   font-display-giant
                   text-brand-orange
-                  text-[10.5vw]
-                  xs:text-[11vw]
-                  sm:text-[68px]
-                  md:text-[92px]
-                  lg:text-[140px]
-                  xl:text-[160px]
-                  tracking-tight
+                  text-[clamp(28px,9.4vw,160px)]
+                  lg:text-[clamp(100px,11.1vw,160px)]
+                  tracking-[-0.06em]
                   leading-none
                   italic
                   font-black
