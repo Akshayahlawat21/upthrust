@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 export const Ribbon3D = () => {
   const mountRef = useRef(null);
@@ -13,9 +11,12 @@ export const Ribbon3D = () => {
     let isVisible = false;
     let isInitialized = false;
 
-    const initThree = () => {
+    const initThree = async () => {
       if (isInitialized) return;
       isInitialized = true;
+
+      const THREE = await import('three');
+      const { GLTFLoader } = await import('three/examples/jsm/loaders/GLTFLoader.js');
 
       scene = new THREE.Scene();
       const width = currentMount.clientWidth || 1440;
