@@ -5,7 +5,7 @@ export const Hero = () => {
   const logos = clientLogos;
   const hero = heroContent;
   return (
-    <section className="relative w-full max-w-full bg-blueprint border-b border-gray-200 overflow-x-clip overflow-hidden text-black pt-8 pb-12 lg:pt-14 lg:pb-16">
+    <section className="relative w-full max-w-full bg-blueprint border-b border-gray-200 overflow-x-clip overflow-hidden text-black pt-6 pb-10 sm:pt-10 sm:pb-14 lg:pt-14 lg:pb-16">
 
       <div
         className="
@@ -13,10 +13,10 @@ export const Hero = () => {
           max-w-[1440px]
           mx-auto
           px-4
-          sm:px-6
+          sm:px-8
           md:px-12
           relative
-          min-h-[640px]
+          min-h-[600px]
           sm:min-h-[700px]
           md:min-h-[760px]
           lg:min-h-[820px]
@@ -26,33 +26,37 @@ export const Hero = () => {
         "
       >
 
+        {/* Primary Semantic SEO H1 for Crawlers & Screen Readers */}
+        <h1 className="sr-only">
+          {hero.headlineTop || "BOLD DESIGN"} THAT {hero.headlineBottom || "PERFORMS"}
+        </h1>
+
         {/* HERO VISUAL */}
         <div className="relative w-full flex flex-col items-center justify-center my-auto">
 
           <div className="w-full text-center select-none relative z-10">
 
             {/* =========================
-                BOLD DESIGN
+                BOLD DESIGN (Full-Width Responsive SVG)
             ========================== */}
-            <h1
-              className="
-                font-display-giant
-                text-brand-orange
-                italic
-                font-black
-                tracking-[-0.06em]
-                leading-[0.88]
-                select-none
-                relative
-                z-10
-                whitespace-nowrap
-                text-[clamp(30px,8.8vw,160px)]
-                lg:text-[clamp(100px,11.1vw,160px)]
-              "
-            >
-              <span className="inline lg:block">BOLD</span>
-              <span className="inline ml-1 sm:ml-2 lg:ml-0">DESIGN</span>
-            </h1>
+            <div className="w-full relative z-10 select-none">
+              <svg 
+                viewBox="0 0 1050 110" 
+                className="w-full h-auto block overflow-visible" 
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden="true"
+              >
+                <text
+                  x="50%"
+                  y="84%"
+                  textAnchor="middle"
+                  className="font-display-giant italic font-black fill-[#FF4600]"
+                  style={{ fontSize: '118px', letterSpacing: '-0.04em' }}
+                >
+                  {hero.headlineTop || "BOLD DESIGN"}
+                </text>
+              </svg>
+            </div>
 
 
             {/* =========================
@@ -64,40 +68,36 @@ export const Hero = () => {
                 w-full
                 max-w-[1000px]
                 mx-auto
-                h-[340px]
+                h-[320px]
                 xs:h-[350px]
                 sm:h-[400px]
                 md:h-[430px]
-                lg:h-[450px]
-                mt-2
-                xs:mt-4
-                sm:mt-6
-                lg:mt-8
+                lg:h-[470px]
+                mt-1
+                sm:mt-4
+                lg:mt-6
               "
             >
 
               {/* =========================
                   STRATEGY IS CHEAPER
-                  LEFT / MIDDLE
+                  LEFT / UPPER
               ========================== */}
               <div
                 className="
                   absolute
-                  left-[3%]
-                  xs:left-[4%]
+                  left-[2%]
                   sm:left-[5%]
-                  md:left-[7%]
-                  lg:left-[8%]
-                  top-[32%]
+                  lg:left-[6%]
+                  top-[24%]
                   sm:top-[22%]
-                  md:top-[25%]
-                  lg:top-[28%]
+                  lg:top-[22%]
                   z-30
                   text-left
                   select-none
                 "
               >
-                <div className="font-black text-[9px] xs:text-[10px] sm:text-sm md:text-base text-black uppercase tracking-tight leading-tight">
+                <div className="font-black text-[10px] xs:text-xs sm:text-sm md:text-base text-black uppercase tracking-tight leading-tight">
 
                   <span>{hero.badgeStrategy || "STRATEGY IS"}</span>
 
@@ -137,20 +137,17 @@ export const Hero = () => {
 
               {/* =========================
                   IDENTITY / EXPERIENCE / MOTION
-                  LEFT / CENTER
+                  LEFT / LOWER
               ========================== */}
               <div
                 className="
                   absolute
-                  left-[3%]
-                  xs:left-[4%]
+                  left-[2%]
                   sm:left-[5%]
-                  md:left-[7%]
-                  lg:left-[8%]
-                  top-[60%]
-                  sm:top-[52%]
-                  md:top-[53%]
-                  lg:top-[53%]
+                  lg:left-[6%]
+                  top-[52%]
+                  sm:top-[48%]
+                  lg:top-[48%]
                   z-30
                   text-left
                   select-none
@@ -159,8 +156,8 @@ export const Hero = () => {
                 <div
                   className="
                     font-black
-                    text-[9px]
-                    xs:text-[10px]
+                    text-[10px]
+                    xs:text-xs
                     sm:text-sm
                     md:text-base
                     text-black
@@ -196,21 +193,19 @@ export const Hero = () => {
 
               {/* =========================
                   THAT
-                  RIGHT OF STATUE
+                  RIGHT OF STATUE NECK
               ========================== */}
               <div
                 className="
                   absolute
-                  left-[62%]
-                  sm:left-[59%]
-                  md:left-[59%]
-                  lg:left-[59%]
-                  top-[54%]
-                  sm:top-[48%]
-                  md:top-[49%]
-                  lg:top-[50%]
+                  left-[56%]
+                  sm:left-[56%]
+                  lg:left-[56%]
+                  top-[44%]
+                  sm:top-[42%]
+                  lg:top-[42%]
                   -translate-y-1/2
-                  z-0
+                  z-10
                   pointer-events-none
                   select-none
                 "
@@ -219,12 +214,12 @@ export const Hero = () => {
                   className="
                     font-condensed-bold
                     text-brand-orange
-                    text-[36px]
-                    xs:text-[42px]
-                    sm:text-[64px]
-                    md:text-[82px]
-                    lg:text-[110px]
-                    xl:text-[125px]
+                    text-5xl
+                    xs:text-6xl
+                    sm:text-7xl
+                    md:text-8xl
+                    lg:text-[115px]
+                    xl:text-[130px]
                     font-black
                     uppercase
                     tracking-tight
@@ -240,24 +235,21 @@ export const Hero = () => {
 
               {/* =========================
                   STATUE
-                  SMALLER + CENTERED
+                  CENTERED OVERLAPPING
               ========================== */}
               <div
                 className="
                   absolute
                   left-1/2
-                  top-[48%]
-                  sm:top-[48%]
-                  md:top-[47%]
-                  lg:top-[46%]
+                  top-[46%]
                   -translate-x-1/2
                   -translate-y-1/2
                   z-20
-                  w-[145px]
-                  xs:w-[155px]
-                  sm:w-[230px]
-                  md:w-[290px]
-                  lg:w-[370px]
+                  w-[185px]
+                  xs:w-[205px]
+                  sm:w-[270px]
+                  md:w-[320px]
+                  lg:w-[380px]
                   h-full
                   flex
                   items-center
@@ -278,11 +270,11 @@ export const Hero = () => {
                     w-full
                     h-full
                     object-contain
-                    max-h-[170px]
-                    xs:max-h-[180px]
-                    sm:max-h-[270px]
-                    md:max-h-[320px]
-                    lg:max-h-[390px]
+                    max-h-[210px]
+                    xs:max-h-[235px]
+                    sm:max-h-[300px]
+                    md:max-h-[350px]
+                    lg:max-h-[400px]
                     drop-shadow-2xl
                     pointer-events-auto
                   "
@@ -292,20 +284,17 @@ export const Hero = () => {
 
               {/* =========================
                   COMFORTABLE IS EXPENSIVE
-                  RIGHT / MIDDLE
+                  RIGHT / UPPER
               ========================== */}
               <div
                 className="
                   absolute
-                  right-[3%]
-                  xs:right-[4%]
+                  right-[2%]
                   sm:right-[5%]
-                  md:right-[7%]
-                  lg:right-[8%]
-                  top-[30%]
-                  sm:top-[21%]
-                  md:top-[24%]
-                  lg:top-[25%]
+                  lg:right-[6%]
+                  top-[20%]
+                  sm:top-[18%]
+                  lg:top-[18%]
                   z-30
                   text-left
                   select-none
@@ -314,8 +303,8 @@ export const Hero = () => {
                 <div
                   className="
                     font-black
-                    text-[9px]
-                    xs:text-[10px]
+                    text-[10px]
+                    xs:text-xs
                     sm:text-sm
                     md:text-base
                     text-black
@@ -357,17 +346,21 @@ export const Hero = () => {
                 className="
                   absolute
                   right-[-2%]
-                  sm:right-[0%]
-                  bottom-[0%]
+                  sm:right-[2%]
+                  bottom-[-4%]
+                  sm:bottom-[0%]
                   pointer-events-none
-                  opacity-25
+                  opacity-30
                   sm:opacity-40
-                  w-28
-                  sm:w-44
-                  md:w-56
-                  h-28
-                  sm:h-44
-                  md:h-56
+                  w-32
+                  xs:w-40
+                  sm:w-52
+                  md:w-64
+                  h-32
+                  xs:h-40
+                  sm:h-52
+                  md:h-64
+                  z-0
                 "
               >
                 <svg
@@ -395,39 +388,25 @@ export const Hero = () => {
 
 
             {/* =========================
-                PERFORMS
-                LOWER + OVERLAPPING
+                PERFORMS (Full-Width Responsive SVG)
             ========================== */}
-            <div
-              className="
-                w-full
-                text-center
-                relative
-                z-30
-                -mt-8
-                xs:-mt-10
-                sm:-mt-16
-                md:-mt-20
-                lg:-mt-24
-                select-none
-              "
-            >
-              <span
-                className="
-                  font-display-giant
-                  text-brand-orange
-                  text-[clamp(28px,9.4vw,160px)]
-                  lg:text-[clamp(100px,11.1vw,160px)]
-                  tracking-[-0.06em]
-                  leading-none
-                  italic
-                  font-black
-                  block
-                  whitespace-nowrap
-                "
+            <div className="w-full relative z-30 select-none -mt-8 xs:-mt-10 sm:-mt-14 md:-mt-18 lg:-mt-22">
+              <svg 
+                viewBox="0 0 880 110" 
+                className="w-full h-auto block overflow-visible" 
+                preserveAspectRatio="xMidYMid meet"
+                aria-hidden="true"
               >
-                {hero.headlineBottom || "PERFORMS"}
-              </span>
+                <text
+                  x="50%"
+                  y="85%"
+                  textAnchor="middle"
+                  className="font-display-giant italic font-black fill-[#FF4600]"
+                  style={{ fontSize: '128px', letterSpacing: '-0.04em' }}
+                >
+                  {hero.headlineBottom || "PERFORMS"}
+                </text>
+              </svg>
             </div>
 
           </div>
