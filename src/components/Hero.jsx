@@ -190,16 +190,19 @@ export const Hero = () => {
               md:top-[12%] md:w-[37%] md:h-[67%]
             "
           >
-            <img
-              src="/assets/herostatue.png"
-              alt="Upthrust Holographic Classical Statue"
-              fetchPriority="high"
-              loading="eager"
-              decoding="async"
-              width="740"
-              height="780"
-              className="w-full h-full object-contain object-center drop-shadow-2xl"
-            />
+            <picture>
+              <source srcSet="/assets/herostatue.webp" type="image/webp" />
+              <img
+                src="/assets/herostatue.png"
+                alt="Upthrust Holographic Classical Statue"
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
+                width="740"
+                height="780"
+                className="w-full h-full object-contain object-center drop-shadow-2xl"
+              />
+            </picture>
           </div>
 
           {/* PERFORMS: only touches the pedestal.

@@ -14,8 +14,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Box 1 (Col 6): Audience Personas Image */}
               <div className="col-span-6 h-full bg-[#FFF0EB] border border-[#FFD5C8] rounded-xl overflow-hidden shadow-xs flex items-center justify-center p-0.5">
                 <img
-                  src="/assets/bento/personas.png"
+                  src="/assets/bento/personas.webp"
                   alt="Audience Personas Framework"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain object-top"
                 />
               </div>
@@ -23,8 +25,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Box 2 (Col 3): Process Sketches Image */}
               <div className="col-span-3 h-full bg-[#FFFFFF] border border-gray-200 rounded-xl overflow-hidden shadow-xs flex items-center justify-center p-1">
                 <img
-                  src="/assets/bento/sketches.png"
+                  src="/assets/bento/sketches.webp"
                   alt="Process & Concept Sketches"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -32,8 +36,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Box 3 (Col 3): Typography Specimen Image */}
               <div className="col-span-3 h-full bg-[#FFFFFF] border border-gray-200 rounded-xl overflow-hidden shadow-xs flex items-center justify-center p-0.5">
                 <img
-                  src="/assets/bento/typography.png"
+                  src="/assets/bento/typography.webp"
                   alt="Typography Specimen"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain object-top"
                 />
               </div>
@@ -44,8 +50,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Box 4 (Col 4): Key Takeaways Stickies Image */}
               <div className="col-span-4 h-full bg-[#FFFFFF] border border-gray-200 rounded-xl overflow-hidden shadow-xs flex items-center justify-center p-1">
                 <img
-                  src="/assets/bento/takeaways.png"
+                  src="/assets/bento/takeaways.webp"
                   alt="Key Takeaways Sticky Notes"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain object-top"
                 />
               </div>
@@ -53,8 +61,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Box 5 (Col 8): Cyble Vision Campaign Flow Image */}
               <div className="col-span-8 h-full bg-[#FFF0EB] border border-[#FFD5C8] rounded-xl overflow-hidden shadow-xs flex items-center justify-center p-0.5">
                 <img
-                  src="/assets/bento/cyble.png"
+                  src="/assets/bento/cyble.webp"
                   alt="Cyble Vision Campaign Rollout"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain object-top"
                 />
               </div>
@@ -72,8 +82,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
                 {/* Image 3: Team photo with turquoise 'A' */}
                 <div className="w-full h-[115px] bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                   <img
-                    src="/assets/service2/image3.png"
+                    src="/assets/service2/image3.webp"
                     alt="Brand Team Collaboration Strategy"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -83,16 +95,20 @@ export const ServiceCard = ({ service, onContactClick }) => {
                   {/* Image 8 (Col 5): 3 dots (teal, purple, pink) */}
                   <div className="col-span-5 h-full bg-[#000000] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center p-1">
                     <img
-                      src="/assets/service2/image8.png"
+                      src="/assets/service2/image8.webp"
                       alt="Brand Color Tokens"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain"
                     />
                   </div>
                   {/* Image 5 (Col 7): Purple card with Market Mapping / Tailored Hiring Strategy / Industry Expertise */}
                   <div className="col-span-7 h-full bg-[#7C5CFC] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                     <img
-                      src="/assets/service2/image5.png"
+                      src="/assets/service2/image5.webp"
                       alt="Strategy & Expertise Framework"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -102,8 +118,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Right Column (Col 6): Image 7 (Folded 3D Accordion Device Mockup) */}
               <div className="col-span-6 h-full bg-[#E5E5E5] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service2/image7.png"
+                  src="/assets/service2/image7.webp"
                   alt="3D Interactive Digital Experience"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -112,8 +130,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
             {/* Bottom Row: Image 6 (Pink brush stroke + teal swatch fan + black vertical pill card) */}
             <div className="w-full h-[105px] bg-transparent rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
               <img
-                src="/assets/service2/image6.png"
+                src="/assets/service2/image6.webp"
                 alt="Brand Identity System & Swatches"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-contain"
               />
             </div>
@@ -128,8 +148,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Left (Col 5): imag1 (Laptop on dark surface under pink spotlight) */}
               <div className="col-span-5 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service3/laptop.png"
+                  src="/assets/service3/laptop.webp"
                   alt="Neatlogs Task Boards Interface"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -137,8 +159,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Middle (Col 4): Inter Colour Palette Poster */}
               <div className="col-span-4 h-full bg-[#0D0D0D] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center p-0.5">
                 <img
-                  src="/assets/service3/inter_poster.png"
+                  src="/assets/service3/inter_poster.webp"
                   alt="Inter Typography & Color Tokens"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -146,8 +170,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Right (Col 3): image 5 (Neatlogs Tape Ribbon) */}
               <div className="col-span-3 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service3/tape_ribbon.png"
+                  src="/assets/service3/tape_ribbon.webp"
                   alt="Neatlogs Tape Ribbon"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -158,8 +184,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Card 1 (Col 3): image 6 (Tablet angled view) */}
               <div className="col-span-3 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service3/tablet_view.png"
+                  src="/assets/service3/tablet_view.webp"
                   alt="Neatlogs Tablet Interface"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -167,8 +195,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Card 2 (Col 1): Stacked Colour Squircles */}
               <div className="col-span-1 h-full bg-[#000000] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center py-1">
                 <img
-                  src="/assets/service3/squircles.png"
+                  src="/assets/service3/squircles.webp"
                   alt="Color Palette Swatches"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -176,8 +206,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Card 3 (Col 6): Neon Neatlogs AI Dashboard Mockup */}
               <div className="col-span-6 h-full bg-[#000000] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service3/neatlogs_dashboard.png"
+                  src="/assets/service3/neatlogs_dashboard.webp"
                   alt="Neatlogs AI Dashboard Mockup"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -185,8 +217,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Card 4 (Col 2): Dark UI Trace Summary Panel */}
               <div className="col-span-2 h-full bg-[#0E0E0E] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center p-0.5">
                 <img
-                  src="/assets/service3/trace_panel.png"
+                  src="/assets/service3/trace_panel.webp"
                   alt="Dark UI Trace Summary Panel"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
@@ -205,16 +239,20 @@ export const ServiceCard = ({ service, onContactClick }) => {
                 {/* Upper: image 3 (Hands holding blue booklet) */}
                 <div className="w-full h-[74px] bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                   <img
-                    src="/assets/service4/brochure.png"
+                    src="/assets/service4/brochure.webp"
                     alt="Printed Brochure Collateral"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 {/* Lower: image 6 (Building facade billboard) */}
                 <div className="w-full h-[74px] bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                   <img
-                    src="/assets/service4/building_billboard.png"
+                    src="/assets/service4/building_billboard.webp"
                     alt="Commercial Glass Facade Billboard"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -223,8 +261,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Center (Col 4): image 8 (3 Wall Posters) */}
               <div className="col-span-4 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service4/wall_posters.png"
+                  src="/assets/service4/wall_posters.webp"
                   alt="Street Wall Posters"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -232,8 +272,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Right (Col 5): image 9 (Cyble Billboard with palm trees) */}
               <div className="col-span-5 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service4/cyble_palm_billboard.png"
+                  src="/assets/service4/cyble_palm_billboard.webp"
                   alt="Cyble Billboard Installation"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -244,8 +286,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Left (Col 5): image 10 (Shopify street billboard with pedestrian) */}
               <div className="col-span-5 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service4/shopify_billboard.png"
+                  src="/assets/service4/shopify_billboard.webp"
                   alt="OOH Street Campaign Billboard"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -253,8 +297,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Center (Col 3): image 11 (Street lightbox with cyclist) */}
               <div className="col-span-3 h-full bg-[#111111] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service4/pipeline_lightbox.png"
+                  src="/assets/service4/pipeline_lightbox.webp"
                   alt="Urban Lightbox Ad Installation"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -262,8 +308,10 @@ export const ServiceCard = ({ service, onContactClick }) => {
               {/* Right (Col 4): image 12 (Multi-format recruitment campaign grid) */}
               <div className="col-span-4 h-full bg-[#0047FF] rounded-xl overflow-hidden border border-neutral-800/80 flex items-center justify-center">
                 <img
-                  src="/assets/service4/recruitment_grid.png"
+                  src="/assets/service4/recruitment_grid.webp"
                   alt="Multi-channel Digital Campaign"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
