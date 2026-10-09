@@ -21,8 +21,10 @@ export const Hero = () => {
               className="
                 font-display-giant
                 text-brand-orange
-                text-[14vw]
-                sm:text-[13vw]
+                text-[10.5vw]
+                xs:text-[11vw]
+                sm:text-[68px]
+                md:text-[92px]
                 lg:text-[140px]
                 xl:text-[160px]
                 tracking-tight
@@ -31,6 +33,8 @@ export const Hero = () => {
                 font-black
                 relative
                 z-10
+                block
+                whitespace-nowrap
               "
             >
               {hero.headlineTop || "BOLD DESIGN"}
@@ -46,13 +50,15 @@ export const Hero = () => {
                 w-full
                 max-w-[1000px]
                 mx-auto
-                h-[300px]
-                sm:h-[360px]
-                md:h-[420px]
+                h-[340px]
+                xs:h-[350px]
+                sm:h-[400px]
+                md:h-[430px]
                 lg:h-[450px]
-                -mt-2
-                sm:-mt-5
-                lg:-mt-8
+                mt-2
+                xs:mt-4
+                sm:mt-6
+                lg:mt-8
               "
             >
 
@@ -63,17 +69,21 @@ export const Hero = () => {
               <div
                 className="
                   absolute
-                  left-[2%]
+                  left-[3%]
                   xs:left-[4%]
-                  sm:left-[7%]
+                  sm:left-[5%]
+                  md:left-[7%]
                   lg:left-[8%]
-                  top-[26%]
+                  top-[32%]
+                  sm:top-[22%]
+                  md:top-[25%]
+                  lg:top-[28%]
                   z-30
                   text-left
                   select-none
                 "
               >
-                <div className="font-black text-[10px] xs:text-xs sm:text-sm md:text-base text-black uppercase tracking-tight leading-tight">
+                <div className="font-black text-[9px] xs:text-[10px] sm:text-sm md:text-base text-black uppercase tracking-tight leading-tight">
 
                   <span>{hero.badgeStrategy || "STRATEGY IS"}</span>
 
@@ -118,11 +128,15 @@ export const Hero = () => {
               <div
                 className="
                   absolute
-                  left-[2%]
+                  left-[3%]
                   xs:left-[4%]
-                  sm:left-[7%]
+                  sm:left-[5%]
+                  md:left-[7%]
                   lg:left-[8%]
-                  top-[52%]
+                  top-[60%]
+                  sm:top-[52%]
+                  md:top-[53%]
+                  lg:top-[53%]
                   z-30
                   text-left
                   select-none
@@ -131,8 +145,8 @@ export const Hero = () => {
                 <div
                   className="
                     font-black
-                    text-[10px]
-                    xs:text-xs
+                    text-[9px]
+                    xs:text-[10px]
                     sm:text-sm
                     md:text-base
                     text-black
@@ -173,11 +187,14 @@ export const Hero = () => {
               <div
                 className="
                   absolute
-                  left-[60%]
+                  left-[62%]
                   sm:left-[59%]
                   md:left-[59%]
                   lg:left-[59%]
-                  top-[50%]
+                  top-[54%]
+                  sm:top-[48%]
+                  md:top-[49%]
+                  lg:top-[50%]
                   -translate-y-1/2
                   z-0
                   pointer-events-none
@@ -188,10 +205,10 @@ export const Hero = () => {
                   className="
                     font-condensed-bold
                     text-brand-orange
-                    text-4xl
-                    xs:text-5xl
-                    sm:text-7xl
-                    md:text-8xl
+                    text-[36px]
+                    xs:text-[42px]
+                    sm:text-[64px]
+                    md:text-[82px]
                     lg:text-[110px]
                     xl:text-[125px]
                     font-black
@@ -199,6 +216,7 @@ export const Hero = () => {
                     tracking-tight
                     leading-none
                     block
+                    whitespace-nowrap
                   "
                 >
                   {hero.badgeThat || "THAT"}
@@ -214,14 +232,17 @@ export const Hero = () => {
                 className="
                   absolute
                   left-1/2
-                  top-[46%]
+                  top-[48%]
+                  sm:top-[48%]
+                  md:top-[47%]
+                  lg:top-[46%]
                   -translate-x-1/2
                   -translate-y-1/2
                   z-20
-                  w-[180px]
-                  xs:w-[210px]
-                  sm:w-[270px]
-                  md:w-[320px]
+                  w-[145px]
+                  xs:w-[155px]
+                  sm:w-[230px]
+                  md:w-[290px]
                   lg:w-[370px]
                   h-full
                   flex
@@ -243,10 +264,10 @@ export const Hero = () => {
                     w-full
                     h-full
                     object-contain
-                    max-h-[210px]
-                    xs:max-h-[240px]
-                    sm:max-h-[300px]
-                    md:max-h-[350px]
+                    max-h-[170px]
+                    xs:max-h-[180px]
+                    sm:max-h-[270px]
+                    md:max-h-[320px]
                     lg:max-h-[390px]
                     drop-shadow-2xl
                     pointer-events-auto
@@ -262,11 +283,15 @@ export const Hero = () => {
               <div
                 className="
                   absolute
-                  right-[2%]
+                  right-[3%]
                   xs:right-[4%]
-                  sm:right-[7%]
+                  sm:right-[5%]
+                  md:right-[7%]
                   lg:right-[8%]
-                  top-[25%]
+                  top-[30%]
+                  sm:top-[21%]
+                  md:top-[24%]
+                  lg:top-[25%]
                   z-30
                   text-left
                   select-none
@@ -275,8 +300,8 @@ export const Hero = () => {
                 <div
                   className="
                     font-black
-                    text-[10px]
-                    xs:text-xs
+                    text-[9px]
+                    xs:text-[10px]
                     sm:text-sm
                     md:text-base
                     text-black
@@ -293,7 +318,7 @@ export const Hero = () => {
                     <span>{hero.badgeExpensive || "IS EXPENSIVE"}</span>
 
                     <svg
-                      className="w-full h-2.5 sm:h-3 -mt-0.5 pointer-events-none"
+                      className="w-full h-2 sm:h-2.5 -mt-0.5 pointer-events-none"
                       viewBox="0 0 120 12"
                       fill="none"
                       preserveAspectRatio="none"
@@ -365,7 +390,8 @@ export const Hero = () => {
                 text-center
                 relative
                 z-30
-                -mt-12
+                -mt-8
+                xs:-mt-10
                 sm:-mt-16
                 md:-mt-20
                 lg:-mt-24
@@ -376,8 +402,10 @@ export const Hero = () => {
                 className="
                   font-display-giant
                   text-brand-orange
-                  text-[14vw]
-                  sm:text-[13vw]
+                  text-[10.5vw]
+                  xs:text-[11vw]
+                  sm:text-[68px]
+                  md:text-[92px]
                   lg:text-[140px]
                   xl:text-[160px]
                   tracking-tight
@@ -385,6 +413,7 @@ export const Hero = () => {
                   italic
                   font-black
                   block
+                  whitespace-nowrap
                 "
               >
                 {hero.headlineBottom || "PERFORMS"}
