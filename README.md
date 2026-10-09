@@ -95,21 +95,14 @@ All website copy, repeated sections, badges, logos, FAQs, and testimonials are d
 
 ---
 
-## 6. AI Tools Used During Development
-
-* **Google Antigravity / Agentic Coding Assistant:** Used for rapid component scaffolding, Three.js geometry inspection, and structured JSON-LD schema generation.
-* **Human Verification & Refinement:** Fine-tuning responsive clamp scaling across 375px/768px/1440px, verifying Zero-PII compliance, and ensuring exact alignment with the Figma design.
-
----
-
-## 7. Known Limitations & Future Improvements
+## 6. Known Limitations & Future Improvements
 
 * **Headless CMS Studio UI:** Deploy an embedded Sanity Studio route for a full visual WYSIWYG editor for non-technical team members.
 * **Service Worker Caching:** Add offline asset caching with a progressive web app (PWA) manifest for instant repeat visits.
 
 ---
 
-## 8. Setup & Local Development
+## 7. Setup & Local Development
 
 ```bash
 # 1. Install dependencies
